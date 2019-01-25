@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Ukraine/Kyiv'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
