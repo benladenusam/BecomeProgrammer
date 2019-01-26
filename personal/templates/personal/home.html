@@ -2,54 +2,12 @@
 
 {% block content %}
 <div class="container">
-
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
-    <h1>Vse zaebis', no sperva</h1>
-    <p>Lolka doljen rabotat'!</p>
+        {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+{% endfor %}
 </div>
 {% endblock %}
