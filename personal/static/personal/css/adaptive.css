@@ -1,0 +1,47 @@
+.section{
+    background-color: red;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.heading{
+    margin-left: 20%;
+}
+.phone,
+.tablet,
+.desktop {
+    background-color: #fff;
+}
+.phone {
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    border: 1px solid blue;
+    z-index: 2;
+    box-shadow: 13px 13px 32px 0 rgba(6, 2, 242, 0.3);
+}
+.tablet {
+    width: 360px;
+    height: 380px;
+    box-shadow: 13px 13px 32px 0 rgba(6, 2, 242, 0.3);
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid blue;
+    z-index: 1;
+}
+.desktop {
+    height: 480px;
+    width: 680px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    border: 1px solid blue;
+}

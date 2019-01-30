@@ -2,12 +2,22 @@
 
 {% block content %}
 <div class="container">
+    <!-- <div class="row"> -->
+    <ul class="list-inline">
         {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-{% endfor %}
+            <li class="list-inline-item mr-4 ml-5 mt-5">
+                <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title"><a href="#">{{post.title}}</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Published: {{ post.published_date }}</h6>
+                        <p class="card-text">{{post.text|linebreaksbr}}</p>
+                        <a href="#" class="card-link">Read More...</a>
+                        <a href="#" class="card-link">Leave a Comment</a>
+                        </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    <!-- </div> -->
 </div>
 {% endblock %}
